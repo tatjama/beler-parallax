@@ -4,7 +4,7 @@
 }
 @font-face{
     font-family: "beVietnam";
-    src: url("./fonts/Be_Vietnam/BeVietnam-Medium.ttf");
+    src: url("../fonts/Be_Vietnam/BeVietnam-Medium.ttf");
 }
 *{
     margin: 0;
@@ -16,24 +16,21 @@
 }
 body{
     font-size: 16px;    
-    width: 1440px;  
+    width: 100vw;  
     color: var(--text-blue); 
     overflow-x: hidden;
 }
 /*Start Section-nine*/
 .section-nine-container{
-    background-color: var(--text-blue);    
-    margin-left: 160px ;
-    margin-top: 160px;
+    background-color: var(--text-blue);   
 }
-/*.section-nine-container::before{
+.section-nine-container::before{
     content:"BELER";
     color: transparent;
     font-size: 15em;
     font-weight: 700;
     -webkit-text-stroke:1px #555;
     -webkit-text-stroke:1px rgb(133, 79, 79);
-    -webkit-text-stroke:1px var(--primary-white);
     position: fixed;
     top:50%;
     left: 50%;
@@ -42,7 +39,7 @@ body{
     -moz-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     -o-transform: translate(-50%,-50%);
-}*/
+}
 .section-nine{
     position: relative;
     display: flex;
