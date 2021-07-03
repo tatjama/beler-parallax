@@ -1,0 +1,107 @@
+:root{
+    --text-blue: hsl(228, 39%, 23%);
+    --primary-red: hsl(359, 95%, 48%);
+}
+@font-face{
+    font-family: "beVietnam";
+    src: url("./fonts/Be_Vietnam/BeVietnam-Medium.ttf");
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: "beVietnam";
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 16px;    
+    width: 1440px;  
+    color: var(--text-blue); 
+    overflow-x: hidden;
+}
+/*Start Section-nine*/
+.section-nine-container{
+    background-color: var(--text-blue);    
+    margin-left: 160px ;
+    margin-top: 160px;
+}
+/*.section-nine-container::before{
+    content:"BELER";
+    color: transparent;
+    font-size: 15em;
+    font-weight: 700;
+    -webkit-text-stroke:1px #555;
+    -webkit-text-stroke:1px rgb(133, 79, 79);
+    -webkit-text-stroke:1px var(--primary-white);
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}*/
+.section-nine{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    padding-bottom: 300px;
+}
+.section-nine h2{
+    margin-left: 200px;
+    font-size: 4em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.parallax-container{
+    position: relative;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+.section-nine:nth-child(even) .parallax-container {
+    flex-direction: row-reverse;
+}
+.img-box {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.1) ;
+}
+.img-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.section-nine:nth-child(even) .parallax-content{
+    left: 0;
+}
+.parallax-content{
+    position: absolute;
+    right:0;
+    margin-top: 200px;
+    margin-bottom: 40px;
+    padding: 40px;
+    background: rgb(211, 20, 20);
+    background: var(--primary-red);
+    z-index: 1;
+    max-width: 400px;
+    box-shadow: 0px 25px 35px rgba(0,0,0,0.1);
+    border-bottom: 6px solid hsl(199, 100%, 65%);
+}
+.parallax-content p{
+    color: #fff;
+    font-size: 1em;
+}
+/*End Section nine*/
