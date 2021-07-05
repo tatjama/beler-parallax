@@ -1,0 +1,137 @@
+:root{
+    --primary-red: hsl(12, 88%, 59%);
+    --primary-blue: hsl(220, 73%, 55%);
+    --shadow-blue: hsl(202, 97%, 86%);
+    --shadow-red: hsl(12, 88%, 59%, 7%);    
+    --text-blue: hsl(228, 39%, 23%);
+    --text-primary:hsl(227, 12%, 61%);
+    --primary-white: hsl(0, 0%, 98%);
+    --primary-red: hsl(359, 90%, 40%);
+    --shadow-red: hsl(359, 90%, 40%,7%);
+    --primary-red: hsl(359, 95%, 48%);
+    --shadow-red: hsl(359, 95%, 48%,7%);
+
+}
+@font-face{
+    font-family: "beVietnam";
+    src: url("../fonts/Be_Vietnam/BeVietnam-Medium.ttf");
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: "beVietnam";
+    scroll-behavior: smooth;
+}
+body, .container{
+    font-size: 16px;    
+    width: 1440px;  
+    color: var(--text-blue); 
+    overflow-x: hidden;
+}
+/*Start Section six*/
+.section-six{
+    min-height: 100vh;
+}
+.section-six h2{
+    color: var(--text-blue);
+    text-align: center;
+    padding: 50px;
+}
+.section-six__container{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.section-six__card{
+    position: relative;
+    max-width: 400px;
+    height: 285px;
+    background-color: var(--primary-red);
+    margin: 100px 13px;
+    padding: 27px 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    transition:0.3s ease-in-out ;
+    -webkit-transition:0.3s ease-in-out ;
+    -moz-transition:0.3s ease-in-out ;
+    -ms-transition:0.3s ease-in-out ;
+    -o-transition:0.3s ease-in-out ;
+}
+.section-six__card:hover{
+    height: 480px;
+}
+.section-six__title{
+    height: 70px;
+}
+.section-six__card h4{
+    font-size: 1.5em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.section-six__img-box{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    top: -80px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.section-six__img-box img{
+    width: 100%;
+
+}
+.section-six__content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: justify;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+.section-six__content p{
+    color: var(--primary-white);
+    font-size: small;
+    height: 130px;
+}
+.section-six__card:hover .section-six__content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: 50px;
+    transition-delay: 0.3s;
+}
+/*End Section six*/
+@media screen and (max-width: 420px){
+    .section-six__card{
+        max-width: 300px;
+        height: 215px;
+        margin: 30px 10px;
+        padding: 20px 15px;
+    }
+    .section-six__card:hover{
+        height: 420px;
+    }
+    .section-six__img-box{
+        width: 260px;
+        height: 260px;
+        top: -60px;
+    }   
+    .section-six__card:hover .section-six__content{
+        margin-top: -40px;
+    }
+}
